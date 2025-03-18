@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: aqua;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #000000;
+}
+.title {
+  text-transform: uppercase;
+  font-size: 60px;
+  color: antiquewhite;
+}
+nav {
+  padding: 26px;
+  display: flex;
+}
+
+nav a {
+  color: antiquewhite;
+  font-size: 35px;
+  font-weight: 700;
+  padding: 9px 16px;
+  letter-spacing: 2px;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  position: relative;
+  width: 420px;
+  background: purple;
+  color: #fff;
+}
+.container h1 {
+  font-size: 36px;
+  text-align: center;
+}
+.container .input-box {
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid grey;
+  border-radius: 40px;
+  font-size: 16px;
+  color:#fff;
+  padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder {
+  color: #fff;
+}
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}

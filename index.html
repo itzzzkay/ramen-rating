@@ -3,12 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Ramenists</title>
     <script src="./js/script.js" defer></script>
     <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header><section></section></header>
-    <main></main>
+    <header>
+      <a href="index.html">
+        <h1 class="title">Ramenists</h1>
+      </a>
+
+      <nav>
+        <a href="#" class="navbar">Rate Now</a>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <form id="RamenForm" action="">
+          <h1>Add Your Ramen!</h1>
+          <div class="input-box">
+            <input type="text" placeholder="Ramen" required />
+            <i class="bx bxs-bowl-hot"></i>
+          </div>
+          <div class="input-box">
+            <input type="text" placeholder="Restaurant" required />
+            <i class="bx bx-restaurant"></i>
+          </div>
+          <div class="input-box">
+            <input type="text" placeholder="Picture" required />
+            <i class="bx bxs-image"></i>
+          </div>
+          <div class="input-box">
+            <input type="text" placeholder="Delicious!" required />
+            <i class="bx bxs-comment-detail"></i>
+          </div>
+          <button onclick="submit" class="buttons">Submit</button>
+        </form>
+      </div>
+    </main>
   </body>
 </html>
