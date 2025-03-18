@@ -5,7 +5,9 @@
   box-sizing: border-box;
 }
 body {
-  background: aqua;
+  background: url("../images/ramen-back.jpeg") no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 a {
   text-decoration: none;
@@ -18,7 +20,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background: #000000;
+  background: transparent;
 }
 .title {
   text-transform: uppercase;
@@ -42,9 +44,6 @@ main {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url('../images/ramen-back.jpeg') no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .container {
   border-radius: 20px;
