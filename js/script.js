@@ -8,3 +8,17 @@ const ramens = [
     { id: 7, name: "Tantanmen Ramen", restaurant: "Nakiri", image: "tantanmen.jpeg", comment: "Delicious!" },
     { id: 8, name: "Tsukumen Ramen", restaurant:"Ikumi", image: "tsukumen.jpeg", comment: "Take when cold!" }
  ];
+
+ const menu = document.getElementById("ramen-menu")
+
+const displayRamens = () => {
+    menu.innerHTML="";
+
+    ramens.forEach(ramen =>{
+        const ramenImg = document.createElement(img);
+        img.src = ramen.image;
+        img.alt = ramen.name;
+        img.title = ramen.title;
+        img.addEventListener
+    }
+}
