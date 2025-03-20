@@ -18,9 +18,9 @@ Software Engineer.
    ```
 2. Open the index.html file in your web browser.
 
-3.
+3. Fill in the necessary data in the form provided.
 
-4.
+4. Your data that was input should be displayed in the web page.
 
 ## Technologies Used
 

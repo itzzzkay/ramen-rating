@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const ramenImg = document.createElement("img");
       ramenImg.src = ramen.image;
       ramenImg.alt = ramen.name;
-      ramenImg.title = ramen.title;
+      ramenImg.title = ramen.name;
       ramenImg.addEventListener("click", function () {
         return ramenDetails(ramen);
       });
@@ -102,8 +102,16 @@ document.addEventListener("DOMContentLoaded", function () {
     form.addEventListener("submit", (event) => {
       event.preventDefault();
 
+      const newName = document.getElementById("ramenName").value;
+      const newRestaurant = document.getElementById("restaurant").value;
+      const newImage = document.getElementById("ramenPic").value;
+      const newRating = document.getElementById("rating").value;
+      const newComment = document.getElementById("comment").value;
+
+      const newId = ramens.length + 1;
+
       const newRamen = {
-        id: ramens.length + 1,
+        id: newId,
         name: newName,
         restaurant: newRestaurant,
         image: newImage,
@@ -111,11 +119,11 @@ document.addEventListener("DOMContentLoaded", function () {
         comment: newComment,
       };
 
-      const newName = document.getElementById("newRamenName").value;
-      const newRestaurant = document.getElementById("newRestaurant").value;
-      const newImage = document.getElementById("newImage").value;
-      const newRating = document.getElementById("newRating").value;
-      const newComment = document.getElementById("newComment").value;
+      ramens.push(newRamen);
+
+      displayRamens();
     });
   }
+  displayRamens();
+  addSubmitListener();
 });
