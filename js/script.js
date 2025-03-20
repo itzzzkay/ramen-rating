@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
       id: 8,
       name: "Tsukumen Ramen",
       restaurant: "Ikumi",
-      image: "tsukumen.jpeg",
+      image: "tsukemen.jpeg",
       rating: 5,
       comment: "Take when cold!",
     },
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     ramens.forEach((ramen) => {
       const ramenImg = document.createElement("img");
-      ramenImg.src = ramen.image;
+      ramenImg.src = `./images/${ramen.image}`;
       ramenImg.alt = ramen.name;
       ramenImg.title = ramen.name;
       ramenImg.addEventListener("click", function () {

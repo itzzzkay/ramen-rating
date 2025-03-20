@@ -96,3 +96,25 @@ main {
   font-size: 16px;
   font-weight: 700;
 }
+#ramen-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+#ramen-menu img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover; /* Ensures images maintain aspect ratio */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+#ramen-menu img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
