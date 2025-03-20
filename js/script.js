@@ -8,7 +8,3 @@ const ramens = [
     { id: 7, name: "Tantanmen Ramen", restaurant: "Nakiri", image: "tantanmen.jpeg", comment: "Delicious!" },
     { id: 8, name: "Tsukumen Ramen", restaurant:"Ikumi", image: "tsukumen.jpeg", comment: "Take when cold!" }
  ];
-
- function displayRamens() {
-
- }
